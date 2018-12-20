@@ -20,6 +20,7 @@
 		8D973F4521CA384F00688772 /* UIButton+ZYXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D973F4421CA384F00688772 /* UIButton+ZYXButton.m */; };
 		8D973F4821CA388300688772 /* UILabel+ZYXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D973F4721CA388300688772 /* UILabel+ZYXLabel.m */; };
 		8D973F4B21CA3A1300688772 /* UIImage+ZYXImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D973F4A21CA3A1300688772 /* UIImage+ZYXImage.m */; };
+		8DA0F2FD21CB314300835426 /* MBProgressHUD+ZYXHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F2FC21CB314300835426 /* MBProgressHUD+ZYXHud.m */; };
 		8F4DE2581CEBFE17B3578BAF /* Pods_AppFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C75A84F771BFE7DB91CEFE /* Pods_AppFrameworkUITests.framework */; };
 		BAAB6CD5ED3A5CCC1EDFFCA9 /* Pods_AppFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDA3F69A8394C4CFCDE9222 /* Pods_AppFrameworkTests.framework */; };
 		BDAC2BDC4FF40A5D84B412BF /* Pods_AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E658E441C5796061CA55EAB /* Pods_AppFramework.framework */; };
@@ -78,6 +79,9 @@
 		8D973F4E21CA409F00688772 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		8D973F5021CA42E500688772 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8D973F5121CA4F9400688772 /* FANCommonConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FANCommonConst.h; sourceTree = "<group>"; };
+		8DA0F2FB21CB314300835426 /* MBProgressHUD+ZYXHud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ZYXHud.h"; sourceTree = "<group>"; };
+		8DA0F2FC21CB314300835426 /* MBProgressHUD+ZYXHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ZYXHud.m"; sourceTree = "<group>"; };
+		8DA0F2FE21CB329B00835426 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		993325B8612799C550706379 /* Pods-AppFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppFramework/Pods-AppFramework.release.xcconfig"; sourceTree = "<group>"; };
 		FAC9CB16C66D1032EBD12F74 /* Pods-AppFrameworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFrameworkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppFrameworkUITests/Pods-AppFrameworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDDA3F69A8394C4CFCDE9222 /* Pods_AppFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				8D973F4E21CA409F00688772 /* Defines.h */,
+				8DA0F2FE21CB329B00835426 /* Singleton.h */,
 			);
 			path = "Macros(宏)";
 			sourceTree = "<group>";
@@ -248,6 +253,8 @@
 				8D973F4721CA388300688772 /* UILabel+ZYXLabel.m */,
 				8D973F4921CA3A1300688772 /* UIImage+ZYXImage.h */,
 				8D973F4A21CA3A1300688772 /* UIImage+ZYXImage.m */,
+				8DA0F2FB21CB314300835426 /* MBProgressHUD+ZYXHud.h */,
+				8DA0F2FC21CB314300835426 /* MBProgressHUD+ZYXHud.m */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -514,6 +521,7 @@
 				8D973F3521CA175A00688772 /* ZYXNetworkingTool.m in Sources */,
 				8D973F3A21CA2D2F00688772 /* Reachability.m in Sources */,
 				8D973F4B21CA3A1300688772 /* UIImage+ZYXImage.m in Sources */,
+				8DA0F2FD21CB314300835426 /* MBProgressHUD+ZYXHud.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

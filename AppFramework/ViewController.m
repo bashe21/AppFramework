@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ZYXNetworkingTool.h"
 #import "UIImage+ZYXImage.h"
+#import "MBProgressHUD+ZYXHud.h"
 
 @interface ViewController ()
 
@@ -23,12 +24,18 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self drawImage];
+    [self reachAblity];
 }
 
 - (void)reachAblity {
+    [MBProgressHUD showCustomView:@"loading" message:nil toView:nil];
     [ZYXNetworkingTool isAbletoConnectNetwork:nil reachabilityHandler:^(Reachability * _Nonnull reachability, BOOL isReachable) {
         NSLog(@">>>:%d",isReachable);
+        [NSThread sleepForTimeInterval:1.5];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:nil];
+        });
+        
     }];
 }
 
