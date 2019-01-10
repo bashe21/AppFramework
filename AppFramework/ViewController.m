@@ -10,7 +10,7 @@
 #import "ZYXNetworkingTool.h"
 #import "UIImage+ZYXImage.h"
 #import "MBProgressHUD+ZYXHud.h"
-
+#import <PPNetworkHelper/PPNetworkHelper.h>
 
 @interface ViewController ()
 
@@ -29,14 +29,11 @@
 }
 
 - (void)reachAblity {
-    [MBProgressHUD showIndeterminateWith:nil];
-    [ZYXNetworkingTool isAbletoConnectNetwork:nil reachabilityHandler:^(Reachability * _Nonnull reachability, BOOL isReachable) {
-        NSLog(@">>>:%d",isReachable);
-        [NSThread sleepForTimeInterval:1.5];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUDForView:nil];
-        });
-        
+    BOOL isReachable = [PPNetworkHelper isNetwork];
+    DLog(@">>>:%d",isReachable);
+    
+    [PPNetworkHelper networkStatusWithBlock:^(PPNetworkStatusType status) {
+        DLog(@">>>:%lu",(unsigned long)status);
     }];
 }
 
