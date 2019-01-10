@@ -8,6 +8,7 @@ target 'AppFramework' do
   pod 'SDWebImage', '~> 4.0'
   pod 'SVProgressHUD'
   pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'PPNetworkHelper'
   
   # Pods for AppFramework
 

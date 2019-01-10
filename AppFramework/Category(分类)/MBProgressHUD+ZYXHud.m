@@ -15,7 +15,7 @@
 
  @param view 需要显示信息的视图
  */
-+ (void)showIndeterminateToWith:(nullable UIView *)view {
++ (void)showIndeterminateWith:(nullable UIView *)view {
     if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
     [MBProgressHUD showHUDAddedTo:view animated:YES];
 }

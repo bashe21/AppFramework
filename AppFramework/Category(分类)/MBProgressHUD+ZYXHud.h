@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MBProgressHUD (ZYXHud)
 
-+ (void)showIndeterminateToWith:(nullable UIView *)view;
++ (void)showIndeterminateWith:(nullable UIView *)view;
 + (void)showMessage:(NSString *)message toView:(nullable UIView *)view isOnlyText:(BOOL)isOnlyText;
 + (void)showCustomView:(NSString *)imgStr message:(nullable NSString *)message toView:(nullable UIView *)view;
 

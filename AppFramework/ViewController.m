@@ -11,6 +11,7 @@
 #import "UIImage+ZYXImage.h"
 #import "MBProgressHUD+ZYXHud.h"
 
+
 @interface ViewController ()
 
 @end
@@ -28,7 +29,7 @@
 }
 
 - (void)reachAblity {
-    [MBProgressHUD showCustomView:@"loading" message:nil toView:nil];
+    [MBProgressHUD showIndeterminateWith:nil];
     [ZYXNetworkingTool isAbletoConnectNetwork:nil reachabilityHandler:^(Reachability * _Nonnull reachability, BOOL isReachable) {
         NSLog(@">>>:%d",isReachable);
         [NSThread sleepForTimeInterval:1.5];
